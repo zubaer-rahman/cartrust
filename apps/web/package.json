@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@cartrust/auth": "workspace:*",
@@ -43,6 +43,8 @@
     "autoprefixer": "^10.4.24",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.19",
-    "typescript": "latest"
+    "typescript": "latest",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.2.10"
   }
 }
