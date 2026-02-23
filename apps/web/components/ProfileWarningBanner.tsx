@@ -1,20 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Button } from '@cartrust/ui';
 import Link from 'next/link';
 import { X } from 'lucide-react';
 
 export function ProfileWarningBanner({ userRole }: { userRole: string }) {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    // Only show if it hasn't been skipped in this session
-    const skipped = sessionStorage.getItem('profileWarningSkipped');
-    if (!skipped) {
-      setIsVisible(true);
+  const [isVisible, setIsVisible] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return !sessionStorage.getItem('profileWarningSkipped');
     }
-  }, []);
+    return false;
+  });
 
   const handleSkip = () => {
     sessionStorage.setItem('profileWarningSkipped', 'true');
