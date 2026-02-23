@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@cartrust/ui": ["packages/ui/index.ts"],
+      "@cartrust/auth": ["packages/auth/index.ts"],
+      "@cartrust/db": ["packages/db/index.ts"],
+      "@cartrust/shared": ["packages/shared/index.ts"],
+      "@cartrust/vehicle-core": ["packages/vehicle-core/index.ts"],
+      "@cartrust/rbac": ["packages/rbac/index.ts"],
+      "@cartrust/media": ["packages/media/index.ts"],
+      "@cartrust/payments": ["packages/payments/index.ts"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

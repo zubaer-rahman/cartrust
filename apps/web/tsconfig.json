@@ -1,0 +1,47 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@cartrust/ui": ["../../packages/ui/index.ts"],
+      "@cartrust/auth": ["../../packages/auth/index.ts"],
+      "@cartrust/db": ["../../packages/db/index.ts"],
+      "@cartrust/shared": ["../../packages/shared/index.ts"],
+      "@cartrust/vehicle-core": ["../../packages/vehicle-core/index.ts"],
+      "@cartrust/rbac": ["../../packages/rbac/index.ts"],
+      "@cartrust/media": ["../../packages/media/index.ts"],
+      "@cartrust/payments": ["../../packages/payments/index.ts"],
+      "@/*": ["./*"]
+    },
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

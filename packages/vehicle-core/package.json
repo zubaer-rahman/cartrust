@@ -1,0 +1,9 @@
+{
+  "name": "@cartrust/vehicle-core",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "dependencies": {
+    "@cartrust/db": "workspace:*",
+    "zod": "latest"
+  }
+}

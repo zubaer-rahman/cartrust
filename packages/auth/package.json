@@ -1,0 +1,11 @@
+{
+  "name": "@cartrust/auth",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "dependencies": {
+    "@supabase/ssr": "latest",
+    "@supabase/supabase-js": "latest",
+    "next": "latest"
+  }
+}
