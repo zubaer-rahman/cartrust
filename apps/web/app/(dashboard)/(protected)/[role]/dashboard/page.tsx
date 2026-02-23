@@ -99,7 +99,7 @@ export default async function DashboardPage(props: {
             <CardHeader className="p-16">
               <CardTitle className="text-6xl font-black tracking-tight max-w-2xl leading-[0.9]">Find your next dream car today.</CardTitle>
               <CardDescription className="text-primary-foreground/80 mt-6 text-xl font-medium max-w-xl leading-relaxed">
-                Connect with verified sellers and participate in exclusive auctions on Bangladesh's premium platform.
+                Connect with verified sellers and participate in exclusive auctions on BangladeshBangladesh's premium platformapos;s premium platform.
               </CardDescription>
               <div className="mt-12 flex gap-4">
                 <Link href="/browse">

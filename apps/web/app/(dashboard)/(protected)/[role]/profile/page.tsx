@@ -41,7 +41,7 @@ export default async function ProfilePage(props: {
       ) : (
         <div className="flex flex-col items-center justify-center py-20 bg-primary/5 rounded-[3rem] border-2 border-primary/20 max-w-2xl mx-auto">
           <div className="text-6xl mb-6">✅</div>
-          <h3 className="text-2xl font-black text-foreground">You're All Set!</h3>
+          <h3 className="text-2xl font-black text-foreground">YouYou're All Setapos;re All Set!</h3>
           <p className="text-muted-foreground font-medium">Your profile verification is complete.</p>
         </div>
       )}
