@@ -13,13 +13,13 @@ export function AppHeader({ title, user }: { title: string, user: any }) {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="flex justify-between items-center py-3 px-8 relative z-50 bg-white border-b border-muted/20">
+    <header className="flex justify-between items-center py-3 px-8 relative z-50 bg-card border-b border-border">
       <h1 className="text-2xl font-black tracking-tight text-foreground">{title}</h1>
       
       <div className="flex items-center gap-6 flex-1 max-w-2xl justify-end">
         <div className="relative w-full max-w-md hidden md:block">
            <Input 
-             className="w-full h-11 bg-[#F2F6FC] border-0 rounded-full font-medium pr-12 text-sm focus:bg-white transition-all text-foreground" 
+             className="w-full h-11 bg-muted/30 border-0 rounded-full font-medium pr-12 text-sm focus:bg-background transition-all text-foreground" 
              placeholder="Search"
            />
            <button className="absolute right-1 top-1/2 -translate-y-1/2 w-9 h-9 bg-primary rounded-full flex items-center justify-center text-white shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all">

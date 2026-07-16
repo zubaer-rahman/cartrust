@@ -13,7 +13,7 @@ export function BrowseSkeleton() {
               <CardTitle className="text-2xl font-black text-[#1a1c2e]">Car Tracking</CardTitle>
               <div className="relative w-60">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                <div className="w-full pl-12 h-10 bg-[#F2F6FC] rounded-full" />
+                <div className="w-full pl-12 h-10 bg-muted/30 rounded-full" />
               </div>
             </div>
 

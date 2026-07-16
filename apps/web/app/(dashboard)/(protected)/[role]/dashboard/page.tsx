@@ -52,7 +52,7 @@ export default async function DashboardPage(props: {
               </Button>
             </Link>
           )}
-          <Button variant="outline" className="rounded-2xl font-black px-8 border-2 h-14 bg-white">
+          <Button variant="outline" className="rounded-2xl font-black px-8 border-2 h-14 bg-card">
             System Settings
           </Button>
         </div>
@@ -78,13 +78,13 @@ export default async function DashboardPage(props: {
                 <CardTitle className="text-6xl font-black mt-2 leading-none">{vehicleCount}</CardTitle>
               </CardHeader>
             </Card>
-            <Card className="rounded-2xl border-0 bg-white shadow-2xl p-4">
+            <Card className="rounded-2xl border border-border bg-card shadow-2xl p-4">
               <CardHeader className="p-10">
                 <CardDescription className="font-black uppercase tracking-widest text-[10px] text-muted-foreground">Live on Market</CardDescription>
                 <CardTitle className="text-6xl font-black mt-2 text-primary leading-none">{activeListings}</CardTitle>
               </CardHeader>
             </Card>
-            <Card className="rounded-2xl border-0 bg-white shadow-2xl p-4">
+            <Card className="rounded-2xl border border-border bg-card shadow-2xl p-4">
               <CardHeader className="p-10">
                 <CardDescription className="font-black uppercase tracking-widest text-[10px] text-muted-foreground">Action Needed</CardDescription>
                 <CardTitle className="text-6xl font-black mt-2 text-foreground leading-none">{(vehicleCount || 0) - (activeListings || 0)}</CardTitle>
@@ -117,14 +117,14 @@ export default async function DashboardPage(props: {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <Card className="rounded-2xl border-0 bg-white shadow-2xl overflow-hidden min-h-[400px]">
+        <Card className="rounded-2xl border border-border bg-card shadow-2xl overflow-hidden min-h-[400px]">
           <CardHeader className="p-10 pb-6">
             <CardTitle className="text-2xl font-black tracking-tight">Recent Activity</CardTitle>
             <CardDescription className="font-medium">Live updates from your account interactions.</CardDescription>
           </CardHeader>
           <CardContent className="px-10 pb-10">
              <div className="flex flex-col items-center justify-center py-20 text-center space-y-6 bg-muted/20 rounded-xl border-2 border-dashed border-muted/50">
-                <div className="w-20 h-20 bg-white rounded-3xl shadow-lg flex items-center justify-center text-3xl">🚗</div>
+                 <div className="w-20 h-20 bg-card rounded-3xl shadow-lg flex items-center justify-center text-3xl">🚗</div>
                 <div className="space-y-2">
                    <p className="text-foreground font-black text-xl">System Synced</p>
                    <p className="text-muted-foreground font-medium max-w-xs mx-auto">All your listing and bids are currently up to date.</p>
@@ -133,7 +133,7 @@ export default async function DashboardPage(props: {
           </CardContent>
         </Card>
 
-        <Card className="rounded-2xl border-0 bg-white shadow-2xl overflow-hidden">
+        <Card className="rounded-2xl border border-border bg-card shadow-2xl overflow-hidden">
           <CardHeader className="p-10 pb-6">
             <CardTitle className="text-2xl font-black tracking-tight">Market Intelligence</CardTitle>
             <CardDescription className="font-medium">Data-driven insights for your next big move.</CardDescription>
@@ -153,7 +153,7 @@ export default async function DashboardPage(props: {
                          <p className="font-bold text-lg leading-tight mt-1">{tip.label}</p>
                       </div>
                    </div>
-                   <div className="w-10 h-10 rounded-xl bg-white shadow-sm flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+                   <div className="w-10 h-10 rounded-xl bg-card shadow-sm border border-border flex items-center justify-center group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">
                       <ArrowRight className="w-5 h-5" />
                    </div>
                 </div>
@@ -164,7 +164,7 @@ export default async function DashboardPage(props: {
 
 
       {role === 'admin' && (
-        <Card className="rounded-2xl border-0 bg-white shadow-2xl overflow-hidden mt-10">
+        <Card className="rounded-2xl border border-border bg-card shadow-2xl overflow-hidden mt-10">
           <CardHeader className="p-10 border-b border-muted/50 bg-muted/10">
             <CardTitle className="text-2xl font-black tracking-tight flex items-center gap-4">
               <Users className="w-7 h-7 text-primary" /> Identity & Access Management

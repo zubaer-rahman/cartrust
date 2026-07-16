@@ -24,7 +24,7 @@ export default async function DashboardLayout({
   const userRole = user?.role || 'guest';
 
   return (
-    <div className="flex bg-[#EDF0F6] min-h-screen">
+    <div className="flex bg-muted/30 min-h-screen">
       <AppSidebar userRole={userRole} />
       
       <div className="flex-1 flex flex-col h-screen overflow-hidden">
@@ -33,7 +33,7 @@ export default async function DashboardLayout({
            user={user ? { fullName: user.fullName, email: user.email } : { fullName: 'Guest', email: '' }} 
         />
         
-        <main className="flex-1 overflow-hidden">
+        <main className="flex-1 overflow-hidden bg-muted/30">
           {children}
         </main>
       </div>
